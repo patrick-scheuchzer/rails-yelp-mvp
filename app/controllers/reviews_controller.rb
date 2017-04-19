@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to restaurant_path(@restaurant), notice: 'Review was successfully added.'
     else
-      render :new
+      render 'restaurants/show'
     end
   end
 
